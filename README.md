@@ -19,7 +19,7 @@
 
 <h2>Usage</h2>
 <p>Running the quiz game is easy! Simply execute the following command in the project directory:</p>
-   <code>python run_quiz.py</code>
+   <code>python Game.py</code>
 
 <h2>How to Contribute</h2>
 <p>We welcome contributions to the Quiz Game! If you have interesting questions and answers that you'd like to add, please feel free to contribute. Here’s how you can do it:</p>
