@@ -23,7 +23,7 @@ def run_quiz():
             {"question": "Quel est le plus grand océan du monde ?", "choices": ["A. Atlantique", "B. Indien", "C. Pacifique", "D. Arctique"], "answer": "C"}
         ],
         "difficile": [
-            {"question": "Qui a peint la 'Joconde' ?", "choices": ["A. Vincent Van Gogh", "B. Pablo Picasso", "C. Leonardo da Vinci", "D. Rembrandt"], "answer": "C"}
+            {"question": "Qui a peint la 'Joconde' ?", "choices": ["A. Vincent Van Gogh", "B. Pablo Picasso", "C. Leonardo da Vinci", "D. Rembrandt"], "answer": "C"},
             {"question": "Qui a inventé l'ampoule électrique ?", "choices": ["A. Nikola Tesla", "B. Thomas Edison", "C. Alexander Graham Bell", "D. Albert Einstein"], "answer": "B"}
         ]
     }
