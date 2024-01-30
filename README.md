@@ -1,7 +1,7 @@
 <h1>Quiz Game by Ermenault Thibaut (CDOF2)</h1>
 
 <h2>Description</h2>
-<p>Welcome to the Quiz Game by Ermenault Thibaut! This interactive game is designed to test your knowledge across various topics. Whether you're looking to challenge yourself or have fun with friends, our quiz game offers an engaging and entertaining experience.</p>
+<p>Welcome to the Quizz Game by Ermenault Thibaut! This interactive game is designed to test your knowledge across various topics. Whether you're looking to challenge yourself or have fun with friends, our quiz game offers an engaging and entertaining experience.</p>
 
 <h2>Installation</h2>
 <p>To get started with the Quiz Game, follow these simple steps:</p>
