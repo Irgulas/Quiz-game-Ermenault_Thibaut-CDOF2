@@ -50,7 +50,7 @@ def run_quiz():
         for choice in q["choices"]:
             print(choice)
         answer = input("Entrez votre réponse (A, B, C, ou D) : ").strip().upper()
-        if answer = q["answer"]:
+        if answer == q["answer"]:
             print("Correct !")
             score += 1
         else:
