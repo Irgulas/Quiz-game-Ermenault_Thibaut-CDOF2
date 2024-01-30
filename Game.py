@@ -27,3 +27,6 @@ def run_quiz():
         print()
 
     print(f"Votre score final est : {score}/{len(questions)}")
+
+## Game
+run_quiz()
