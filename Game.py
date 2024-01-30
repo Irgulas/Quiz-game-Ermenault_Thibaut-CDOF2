@@ -1,3 +1,34 @@
+import json
+def save_score(name, score):
+    try:
+        with open('scores.json', 'r') as file:
+            scores = json.load(file)
+    except FileNotFoundError:
+        scores = []
+
+    scores.append({'name': name, 'score': score})
+    
+    with open('scores.json', 'w') as file:
+        json.dump(scores, file)
+#New Feature !!!
+def display_leaderboard():
+    try:
+        with open('scores.json', 'r') as file:
+            scores = json.load(file)
+    except FileNotFoundError:
+        print("Aucun score enregistré pour le moment.")
+        return
+
+    scores.sort(key=lambda x: x['score'], reverse=True)
+
+    print("\nTop Scores:")
+    print("{:<20} {:<10}".format("Nom", "Score"))
+    print("-" * 30)  
+
+    top_scores = scores if len(scores) < 10 else scores[:10]
+
+    for score in top_scores:
+        print("{:<20} {:<10}".format(score['name'], score['score']))
 def run_quiz():
     questions = [
         {"question": "Quelle est la capitale de la France ?", "choices": ["A. Paris", "B. Rome", "C. Berlin", "D. Madrid"], "answer": "A"},
@@ -27,6 +58,9 @@ def run_quiz():
         print()
 
     print(f"Votre score final est : {score}/{len(questions)}")
+    name = input("Entrez votre nom pour enregistrer votre score: ")
+    save_score(name, score)
+    display_leaderboard()
 
 ## Game
 run_quiz()
